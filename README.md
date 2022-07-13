@@ -1,2 +1,2 @@
-# Rec
-recommend algorithm 
+## RecAlgorithm
+recommend algorithm
