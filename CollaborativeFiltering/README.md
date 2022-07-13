@@ -6,10 +6,11 @@
 
 - 进行ALS模型训练和预测
 
-    
-    python train_cf.py  --data_path "./data/ratings.csv" --train_flag True
+```
+python train_cf.py  --data_path "./data/ratings.csv" --train_flag True
+```
 
 - 不训练，直接进行ALS模型预测
-
-
-    python train_cf.py  --data_path "./data/ratings.csv"
+```
+python train_cf.py  --data_path "./data/ratings.csv"
+```
