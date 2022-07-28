@@ -19,8 +19,8 @@ def dssm_model(feature_inputs, item_feature_columns, user_feature_columns, hidde
     output = tf.keras.layers.Dot(axes=1)([item_tower, user_tower])
     output = tf.keras.layers.Dense(1, activation='sigmoid')(output)
 
-    neural_cf_model = tf.keras.Model(feature_inputs, output)
-    return neural_cf_model
+    model = tf.keras.Model(feature_inputs, output)
+    return model
 
 
 def gen_dataset(data_df: pd.DataFrame, columns: dict):
